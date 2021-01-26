@@ -1,5 +1,6 @@
 {
   "name": "pricing",
+  "homepage": "http://dallasvaughn.github.io/pricing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +34,12 @@
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [

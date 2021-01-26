@@ -12,7 +12,7 @@ const Card = () => {
   useEffect(() => {
     setViews(pageviews[range]);
     setPrice(prices[range]);
-  }, [range]);
+  });
 
   const handleChange = (event) => {
     setRange(event.target.value);

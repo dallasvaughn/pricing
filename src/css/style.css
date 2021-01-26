@@ -43,7 +43,8 @@ body {
   grid-template-rows: repeat(3, 1fr); }
   @media only screen and (max-width: 31.25em) {
     .card {
-      grid-row: 2 / 4; } }
+      grid-row: 2 / 4;
+      padding: 1.5rem; } }
 
 .preview {
   grid-row: 1 / 3;
