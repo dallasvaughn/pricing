@@ -1,0 +1,62 @@
+$color-soft-cyan: hsl(174, 77%, 80%);
+$color-strong-cyan: hsl(174, 86%, 45%);
+$color-grey-red: hsl(14, 92%, 95%);
+$color-light-red: hsl(15, 100%, 70%);
+$color-pale-blue: hsl(226, 100%, 87%);
+
+$color-very-pale-blue: hsl(230, 100%, 99%);
+$color-light-grey-1: hsl(224, 65%, 95%);
+$color-light-grey-2: hsl(223, 50%, 87%);
+$color-grey-blue: hsl(225, 20%, 60%);
+$color-dark-blue: hsl(227, 35%, 25%);
+
+$bp-large: 39.375em; // 630px
+$bp-small: 31.25em; // 500px
+$bp-smallest: 28.125em; // 450px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 58%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 44%;
+  }
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  background-color: $color-very-pale-blue;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 60rem) minmax(
+      4rem,
+      1fr
+    );
+  grid-template-rows: minmax(2rem, 1fr) minmax(min-content, 45rem) minmax(
+      2rem,
+      1fr
+    );
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 12rem;
+  }
+}
